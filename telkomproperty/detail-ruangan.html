@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Lantai 5 - Graha Merah Putih</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS SAMA DENGAN INDEX (Bisa dijadikan style.css terpisah) */
+        :root { --telkom-red: #ee2e24; --telkom-dark: #1a1a1a; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: #f9f9f9; color: #333; }
+        
+        .navbar { display: flex; justify-content: space-between; padding: 20px 5%; background: white; border-bottom: 1px solid #ddd; }
+        .logo { font-weight: 800; color: #333; text-decoration: none; }
+        
+        /* LAYOUT DETAIL */
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+        
+        .image-gallery { height: 400px; background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'); background-size: cover; border-radius: 20px; margin-bottom: 20px; }
+        
+        .content-box { background: white; padding: 30px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .title { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
+        .specs-list { list-style: none; margin-top: 20px; }
+        .specs-list li { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #eee; }
+        
+        .floor-plan-box { text-align: center; border: 2px dashed #ccc; padding: 40px; background: #fff; border-radius: 10px; color: #888; }
+        
+        .btn-wa { display: block; width: 100%; padding: 15px; background: #25D366; color: white; text-align: center; border-radius: 10px; font-weight: bold; text-decoration: none; margin-top: 20px; }
+        
+        @media (max-width: 800px) { .container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><i class="fas fa-arrow-left"></i> Kembali ke Beranda</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <div class="image-gallery"></div>
+            
+            <div class="content-box">
+                <span style="color: var(--telkom-red); font-weight: bold;">AVAILABLE SPACE</span>
+                <h1 class="title">Lantai 5 (Full Block)</h1>
+                <p style="line-height: 1.6; color: #555;">
+                    Space perkantoran dengan luasan terbesar (Idle Space) yang tersedia di Gedung Graha Merah Putih saat ini. 
+                    Sangat cocok untuk kantor pusat perusahaan yang membutuhkan layout open-plan luas tanpa sekat permanen.
+                    Memiliki view kota Medan yang luas.
+                </p>
+            </div>
+
+            <div class="content-box">
+                <h3 style="margin-bottom: 20px;">Denah Ruangan</h3>
+                <div class="floor-plan-box">
+                    <i class="fas fa-map" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <p>[TEMPAT GAMBAR DENAH LANTAI 5 - 1.064 M²]</p>
+                    <p style="font-size: 0.8rem;">(Ganti dengan gambar dari Slide PPT Hal. 9)</p>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="content-box">
+                <h3>Spesifikasi</h3>
+                <ul class="specs-list">
+                    <li><span>Luas Area</span> <strong>1.064 m²</strong></li>
+                    <li><span>Lantai</span> <strong>Lantai 5</strong></li>
+                    <li><span>Kondisi</span> <strong>Bare / Fitted</strong></li>
+                    <li><span>AC System</span> <strong>Central</strong></li>
+                    <li><span>Listrik</span> <strong>Backup Genset</strong></li>
+                </ul>
+                <a href="#" class="btn-wa"><i class="fab fa-whatsapp"></i> Hubungi Marketing</a>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>

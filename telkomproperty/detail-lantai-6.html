@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lantai 6 Office - Graha Merah Putih</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Paste style CSS yang sama persis disini */
+        :root { --telkom-red: #ee2e24; --telkom-dark: #1a1a1a; --radius-main: 16px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: #f9f9f9; color: #333; }
+        a { text-decoration: none; color: inherit; }
+        .navbar { display: flex; justify-content: space-between; padding: 20px 5%; background: white; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 999; }
+        .logo { font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; }
+        .container { max-width: 1280px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+        .main-image { width: 100%; height: 450px; background-image: url('https://images.unsplash.com/photo-1504384308090-c54be385263d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80'); background-size: cover; border-radius: var(--radius-main); margin-bottom: 30px; }
+        .room-header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .badge { background: #e6fffa; color: #00a500; padding: 5px 12px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; }
+        .title { font-size: 2.5rem; font-weight: 800; margin: 10px 0; }
+        .meta { display: flex; gap: 20px; color: #666; font-size: 0.95rem; }
+        .meta i { color: var(--telkom-red); margin-right: 5px; }
+        .section-box { background: white; padding: 30px; border-radius: var(--radius-main); margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+        .sec-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; }
+        .amenities-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .amenity { display: flex; align-items: center; gap: 10px; color: #555; }
+        .amenity i { color: #00c853; }
+        .sidebar { position: relative; }
+        .booking-card { background: white; padding: 30px; border-radius: var(--radius-main); box-shadow: 0 10px 40px rgba(0,0,0,0.08); position: sticky; top: 100px; border: 1px solid #eee; }
+        .price-label { font-size: 0.9rem; color: #666; }
+        .price-val { font-size: 1.8rem; font-weight: 800; color: var(--telkom-red); margin-bottom: 20px; }
+        .spec-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.9rem; }
+        .btn-wa { display: flex; align-items: center; justify-content: center; width: 100%; padding: 15px; background: #25D366; color: white; border-radius: 8px; font-weight: 700; margin-top: 20px; gap: 10px; transition: 0.3s; }
+        .btn-wa:hover { background: #1da851; }
+        .floor-plan-box { background: #f4f6f8; border: 2px dashed #ccc; padding: 40px; text-align: center; border-radius: 12px; color: #888; margin-top: 10px; }
+        @media (max-width: 900px) { .container { grid-template-columns: 1fr; } .booking-card { position: static; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><i class="fas fa-arrow-left"></i> Kembali ke Beranda</a>
+        <div style="font-weight: 600;">Detail Space</div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <div class="main-image"></div>
+            
+            <div class="room-header">
+                <span class="badge">AVAILABLE • LANTAI 6</span>
+                <h1 class="title">Medium & Compact Office Suites</h1>
+                <div class="meta">
+                    <span><i class="fas fa-ruler-combined"></i> Unit A: 84 m²</span>
+                    <span><i class="fas fa-ruler-combined"></i> Unit B: 120 m²</span>
+                    <span><i class="fas fa-building"></i> Multi-Tenant Floor</span>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <h3 class="sec-title">Deskripsi Ruangan</h3>
+                <p style="line-height: 1.6; color: #555;">
+                    Lantai 6 didesain untuk perusahaan berkembang (Medium Enterprise) atau Startup. 
+                    Tersedia beberapa opsi luasan (Unit) yang lebih compact, sehingga lebih efisien secara biaya sewa.
+                    Koridor umum rapi dengan akses ke toilet bersama di lantai yang sama.
+                </p>
+            </div>
+
+            <div class="section-box">
+                <h3 class="sec-title">Fasilitas Unit</h3>
+                <div class="amenities-grid">
+                    <div class="amenity"><i class="fas fa-check-circle"></i> Partisi Ruangan (Optional)</div>
+                    <div class="amenity"><i class="fas fa-check-circle"></i> Karpet (Pada Unit Tertentu)</div>
+                    <div class="amenity"><i class="fas fa-check-circle"></i> Pencahayaan Alami Bagus</div>
+                    <div class="amenity"><i class="fas fa-check-circle"></i> Jaringan Listrik Stabil</div>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <h3 class="sec-title">Pilihan Unit Tersedia</h3>
+                
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div style="font-weight: bold;">Unit 6-A</div>
+                        <div style="font-size: 0.9rem; color: #666;">Luas: 84 m²</div>
+                    </div>
+                    <span style="background: #e6fffa; color: #00a500; padding: 3px 8px; font-size: 0.8rem; font-weight: bold; border-radius: 4px;">Available</span>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div style="font-weight: bold;">Unit 6-B</div>
+                        <div style="font-size: 0.9rem; color: #666;">Luas: 120 m²</div>
+                    </div>
+                    <span style="background: #e6fffa; color: #00a500; padding: 3px 8px; font-size: 0.8rem; font-weight: bold; border-radius: 4px;">Available</span>
+                </div>
+
+                <div class="floor-plan-box" style="margin-top: 20px;">
+                    <i class="fas fa-map" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <p style="font-weight: bold;">[TEMPAT GAMBAR DENAH LANTAI 6]</p>
+                    <small>Silakan masukkan gambar dari Slide PPT Hal. 16/18 di sini</small>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="booking-card">
+                <div class="price-label">Opsi Luas</div>
+                <div class="price-val">84 - 142 m²</div>
+
+                <div class="spec-row"><span>Lantai</span> <strong>6</strong></div>
+                <div class="spec-row"><span>Tipe</span> <strong>Multi-Tenant</strong></div>
+                <div class="spec-row"><span>Listrik</span> <strong>Sesuai Unit</strong></div>
+                <div class="spec-row"><span>Akses</span> <strong>Lift Bersama</strong></div>
+
+                <a href="https://wa.me/626188813304" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Cek Ketersediaan Unit
+                </a>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

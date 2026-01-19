@@ -1,0 +1,162 @@
+:root {
+    --telkom-red: #ee2e24;
+    --telkom-dark: #1a1a1a;
+    --telkom-gray: #f4f6f8;
+    --radius-xl: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    color: var(--telkom-dark);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    color: var(--telkom-red);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: var(--telkom-red);
+    font-weight: 700;
+}
+
+/* HERO */
+.hero-container {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 25px;
+}
+
+.hero-main {
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+        url("../img/foto.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius-xl);
+    padding: 60px;
+    color: white;
+}
+
+.hero-tag {
+    color: var(--telkom-red);
+    font-weight: 700;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero-desc {
+    max-width: 500px;
+    margin: 20px 0 35px;
+    line-height: 1.6;
+}
+
+.btn-cta {
+    background: var(--telkom-red);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    display: inline-flex;
+    gap: 10px;
+}
+
+/* SIDEBAR */
+.hero-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat-card {
+    background: var(--telkom-dark);
+    color: white;
+    border-radius: var(--radius-xl);
+    padding: 40px;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    color: var(--telkom-red);
+}
+
+.why-card {
+    background: var(--telkom-gray);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.why-card ul {
+    list-style: none;
+}
+
+.why-card li {
+    margin-bottom: 8px;
+}
+
+.why-card i {
+    color: green;
+    margin-right: 8px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 80px;
+    padding: 30px;
+    background: var(--telkom-dark);
+    color: #aaa;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
